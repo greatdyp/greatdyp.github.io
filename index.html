@@ -1,182 +1,316 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="no-js">
 <head>
-<meta charset="utf-8">
-<title>Great-杜亚鹏</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<link href="css/base.css" rel="stylesheet">
-<link href="css/index.css" rel="stylesheet">
-<script type="text/javascript" src="js/jquery.js"></script>
+<title>Great · 杜亚鹏</title>
+<meta charset="utf-8" /> 
+<link rel="stylesheet" href="css/style.min.css" type="text/css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/skel.min.js"></script>
+<style>
+/* = 中文版细节微调
+----------------------------------------------- */
+body, input, textarea, h1, h2, h3, h4 {
+    font-family: 'Source Sans Light', 'Apple LiSung Light', 'STHeiti Light', 'SimSun', sans-serif;
+    /* Windows 下的非衬线中文字体黑体以及微软雅黑在大字号下都非常难看，无奈选用宋体↑ */
+}
+html.ios > body,
+html.ios > input,
+html.ios > textarea,
+html.ios > h1,
+html.ios > h2,
+html.ios > h3,
+html.ios > h4 {
+    font-family: sans-serif;
+}
+body, input, textarea {
+    line-height: 1.5;
+    font-size: 20px;
+}
+html.ios > body,
+html.ios > input,
+html.ios > textarea {
+    line-height: 1.65;
+}
+h3 {
+    font-weight: bold;
+}
+.content h2 {
+    margin-bottom: 0.25em;
+}
+.content > .container p {
+    letter-spacing: -0.5px;
+}
+body > header .title p.subline {
+    font-size: 1.5em;
+    margin-top: 0.125em;
+}
+section#travel #maps h3 {
+    letter-spacing: -1px;
+    font-size: 1.2em;
+}
+section#photography a i {
+    vertical-align: text-top;
+}
+section#more .description p {
+    line-height: 1.45;
+}
+section#contact .sns-icons {
+    font-size: 2.5em;
+}
+footer a.icp {
+    font-size: 0.75em;
+    color: #bbb;
+}
+@media (max-width: 727px) {
+    body, input, textarea {
+        font-size: 18px;
+    }
+}
+@media (max-width: 535px) {
+    body, input, textarea {
+        font-size: 14px;
+        line-height: 1.35;
+    }
+}
+</style>
 </head>
-<body>
-<div id="wrapper">
-  <header>
-    <div class="headtop"></div>
-    <div class="contenttop">
-      <div class="logo f_l">欢迎来到Great-杜亚鹏的个人网站</div>
-      <!-- <div class="search f_r">
-        <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
-          <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
-          <input name="show" value="title" type="hidden">
-          <input name="tempid" value="1" type="hidden">
-          <input name="tbname" value="news" type="hidden">
-          <input name="Submit" class="input_submit" value="搜索" type="submit">
-        </form>
-      </div> -->
-      <div class="blank"></div>
-      <nav>
-        <div  class="navigation">
-          <ul class="menu">
-            <li><a href="index.html">网站首页</a></li>
-            <li><a href="#">关于我</a>
-              <ul>
-                <li><a href="about.html">个人简介</a></li>
-                <li><a href="listpic.html">个人相册</a></li>
-              </ul>
-            </li>
-            <li><a href="#">我的日记</a>
-              <ul>
-                <li><a href="newslistpic.html">个人日记</a></li>
-                <li><a href="newslistpic.html">学习笔记</a></li>
-              </ul>
-            </li>
-            <li><a href="newslistpic.html">技术文章</a> </li>
-            <li><a href="#">给我留言</a> </li>
-          </ul>
+<body id="body" class="init header-fadeout">
+
+    <!-- Header -->
+    
+    <header class="header">
+        <nav class="top clearfix">
+            <a href="javascript:;" data-action="switch-fullscreen-mode"><span> 全屏浏览</span></a>
+            <span class="right"><a href="javascript:;" data-action="switch-language"><span> View in English</span></a></span>
+        </nav>
+    
+        <div class="header-background">
+            <img id="back-sticker" src="img/mine.png" alt="我的背影" />
         </div>
-      </nav>
-      <SCRIPT type=text/javascript>
-	// Navigation Menu
-	$(function() {
-		$(".menu ul").css({display: "none"}); // Opera Fix
-		$(".menu li").hover(function(){
-			$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
-		},function(){
-			$(this).find('ul:first').css({visibility: "hidden"});
-		});
-	});
-</SCRIPT> 
-    </div>
-  </header>
-  <div class="jztop"></div>
-  <div class="container">
-    <div class="bloglist f_l">
-      <h3><a href="/jstt/bj/2017-07-13/784.html">【心路历程】请不要在设计这条路上徘徊啦</a></h3>
-      <figure><img src="images/img_1.jpg" alt="【心路历程】请不要在设计这条路上徘徊啦"></figure>
-      <ul>
-        <p> 我整理了一下网友给我的来信，如果你还在踌躇不前，不妨来看看，到底要不要坚持下去！我也欢迎大家给我来信，希望能帮到更多人。</p>
-        <a title="【心路历程】请不要在设计这条路上徘徊啦" href="/jstt/bj/2017-07-13/784.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
-      </ul>
-      <p class="dateview"><span>2017-07-13</span><span>作者：</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
-      <h3><a href="/jstt/bj/2015-01-09/740.html">【匆匆那些年】总结个人博客经历的这四年…</a></h3>
-      <figure><img src="images/img_2.jpg" alt="【匆匆那些年】总结个人博客经历的这四年…"></figure>
-      <ul>
-        <p>博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补</p>
-        <a title="【匆匆那些年】总结个人博客经历的这四年…" href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
-      </ul>
-      <p class="dateview"><span>2015-01-09</span><span>作者：杜亚鹏</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
-      <h3><a href="/jstt/bj/2014-11-06/732.html">分享我的个人博客访问量如何做到IP从10到600的(图文)</a></h3>
-      <figure><img src="images/img_3.jpg" alt="分享我的个人博客访问量如何做到IP从10到600的(图文)"></figure>
-      <ul>
-        <p>我的个人博客总共展示了三个版本，界面也经历了由“简单”到“复杂”再到“简单”，颜色从“色泽单一”到“五彩斑斓”再到“局部点缀”的过程。原来一年一个版本！而每次改版的契机都是被百度惩罚！界面不要频繁更换！好好检查代码，有没有冗余、结构有没有不合理的地方。</p>
-        <a title="分享我的个人博客访问量如何做到IP从10到600的(图文)" href="/jstt/bj/2014-11-06/732.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
-      </ul>
-      <p class="dateview"><span>2014-11-06</span><span>作者：杜亚鹏</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
-      <h3><a href="/jstt/bj/2014-10-18/731.html">帝国cms常用标签调用方法总结（不得不收藏哦）</a></h3>
-      <figure><img src="images/img_4.jpg" alt="帝国cms常用标签调用方法总结（不得不收藏哦）"></figure>
-      <ul>
-        <p>整理了一些常用的帝国cms调用，灵动标签和万能标签的调用方法举例。幻灯片、标题、一级栏目、二级栏目、带模版的友情链接（下拉菜单）、判断内容页字段为空时是如何调用的等等...新手可以借鉴学习。</p>
-        <a title="帝国cms常用标签调用方法总结（不得不收藏哦）" href="/jstt/bj/2014-10-18/731.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
-      </ul>
-      <p class="dateview"><span>2015-01-09</span><span>作者：杜亚鹏</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
-      <h3><a href="/jstt/bj/2017-07-13/784.html">【心路历程】请不要在设计这条路上徘徊啦</a></h3>
-      <figure><img src="images/img_1.jpg" alt="【心路历程】请不要在设计这条路上徘徊啦"></figure>
-      <ul>
-        <p> 我整理了一下网友给我的来信，如果你还在踌躇不前，不妨来看看，到底要不要坚持下去！我也欢迎大家给我来信，希望能帮到更多人。</p>
-        <a title="【心路历程】请不要在设计这条路上徘徊啦" href="/jstt/bj/2017-07-13/784.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
-      </ul>
-      <p class="dateview"><span>2017-07-13</span><span>作者：</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
-      <h3><a href="/jstt/bj/2015-01-09/740.html">【匆匆那些年】总结个人博客经历的这四年…</a></h3>
-      <figure><img src="images/img_2.jpg" alt="【匆匆那些年】总结个人博客经历的这四年…"></figure>
-      <ul>
-        <p>博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补</p>
-        <a title="【匆匆那些年】总结个人博客经历的这四年…" href="/jstt/bj/2015-01-09/740.html" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
-      </ul>
-      <p class="dateview"><span>2015-01-09</span><span>作者：杜亚鹏</span><span>个人博客：[<a href="/jstt/bj/">心得笔记</a>]</span></p>
-    </div>
-    <div class="r_box f_r">
-      <div class="tit01">
-        <h3 class="tit">关注我</h3>
-        <div class="gzwm"> 
-          <ul>
-            <li><a class="email" href="#" target="_blank">我的电话</a></li>
-            <li><a class="qq" href="#mailto:admin@admin.com" target="_blank">我的邮箱</a></li>
-            <li><a class="tel" href="#" target="_blank">我的QQ</a></li>
-            <!-- <li><a class="prize" href="#">个人奖项</a></li> -->
-          </ul>
+        
+        <div class="title">
+            <h1>我是杜亚鹏</h1>
+            <p class="subline">欢迎走进我的世界</p>
         </div>
-      </div>
-      <!--tit01 end-->
-      
-      <div class="tuwen">
-        <h3 class="tit">图文推荐</h3>
-        <ul>
-          <li><a href="/"><img src="images/01.jpg"><b>住在手机里的朋友</b></a>
-            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
-          </li>
-          <li><a href="/"><img src="images/02.jpg"><b>教你怎样用欠费手机拨打电话</b></a>
-            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
-          </li>
-          <li><a href="/" title="手机的16个惊人小秘密，据说99.999%的人都不知"><img src="images/03.jpg"><b>手机的16个惊人小秘密，据说...</b></a>
-            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
-          </li>
-          <li><a href="/"><img src="images/06.jpg"><b>住在手机里的朋友</b></a>
-            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
-          </li>
-          <li><a href="/"><img src="images/04.jpg"><b>教你怎样用欠费手机拨打电话</b></a>
-            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
-          </li>
-          <li><a href="/"><img src="images/02.jpg"><b>教你怎样用欠费手机拨打电话</b></a>
-            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
-          </li>
-          <li><a href="/" title="手机的16个惊人小秘密，据说99.999%的人都不知"><img src="images/03.jpg"><b>手机的16个惊人小秘密，据说...</b></a>
-            <p><span class="tulanmu"><a href="/">手机配件</a></span><span class="tutime">2015-02-15</span></p>
-          </li>
-        </ul>
-      </div>
-      <div class="ph">
-        <h3 class="tit">点击排行</h3>
-        <ul class="rank">
-          <li><a href="/jstt/bj/2017-07-13/784.html" title="【心路历程】请不要在设计这条路上徘徊啦" target="_blank">【心路历程】请不要在设计这条路上徘徊啦</a></li>
-          <li><a href="/news/s/2016-05-20/751.html" title="IP要突破2000+了" target="_blank">IP要突破2000+了</a></li>
-          <li><a href="/jstt/web/2015-07-03/749.html" title="帝国cms首页、自定义页面如何实现分页" target="_blank">帝国cms首页、自定义页面如何实现分页</a></li>
-          <li><a href="/jstt/web/2015-02-25/745.html" title="【已评选】给我模板PSD源文件，我给你设计HTML！" target="_blank">【已评选】给我模板PSD源文件，我给你设计HTML！</a></li>
-          <li><a href="/jstt/bj/2015-02-14/744.html" title="【郑重申明】本站只提供静态模板下载！" target="_blank">【郑重申明】本站只提供静态模板下载！</a></li>
-          <li><a href="/news/s/2015-01-23/741.html" title="【孕期日记】生活本该如此" target="_blank">【孕期日记】生活本该如此</a></li>
-          <li><a href="/jstt/bj/2015-01-09/740.html" title="【匆匆那些年】总结个人博客经历的这四年…" target="_blank">【匆匆那些年】总结个人博客经历的这四年…</a></li>
-          <li><a href="/jstt/web/2015-01-01/739.html" title=" 2014年度优秀个人博客排名公布" target="_blank"> 2014年度优秀个人博客排名公布</a></li>
-          <li><a href="/jstt/web/2014-12-18/736.html" title="2014年度优秀个人博客评选活动" target="_blank">2014年度优秀个人博客评选活动</a></li>
-          <li><a href="/jstt/css3/2014-12-09/734.html" title="使用CSS3制作文字、图片倒影" target="_blank">使用CSS3制作文字、图片倒影</a></li>
-          <li><a href="/jstt/css3/2014-11-18/733.html" title="【分享】css3侧边栏导航不同方向划出效果" target="_blank">【分享】css3侧边栏导航不同方向划出效果</a></li>
-          <li><a href="/jstt/bj/2014-11-06/732.html" title="分享我的个人博客访问量如何做到IP从10到600的(图文)" target="_blank">分享我的个人博客访问量如何做到IP从10到600的(图文)</a></li>
-        </ul>
-      </div>
-      <div class="ad"> <img src="images/03.jpg"> </div>
-    </div>
-  </div>
-  <!-- container代码 结束 -->
-  <div class="jzend"></div>
-  <footer>
-    <div class="footer">
-      <div class="f_l">
-        <p>All Rights Reserved 版权所有：<a href="http://www.yangqq.com">杜亚鹏个人博客</a> 备案号：蜀ICP备00000000号</p>
-      </div>
-      <div class="f_r textr">
-        <p>Design by DanceSmile</p>
-      </div>
-    </div>
-  </footer>
-</div>
+        
+        <button class="trigger" data-info="点此开始"><span>Trigger</span></button>
+    </header>
+
+    <!-- Intro -->
+    
+    <section id="intro" class="content">
+        <div class="container">
+            <!-- <h2>我是</h2> -->
+            <p>我是一名少壮不努力，老大搞IT的90后。</p>
+            <p>现在我 25 岁，在武汉为梦想奋斗着。</p>
+        </div>
+    </section>
+
+    <!-- Travel -->
+    
+    <section id="travel" class="content">
+        <div class="container">
+            <h2>座右铭</h2>
+            <p>什么事情到最后都是最好的，如果不是做好的说明还没到最后。</p>
+            <p>stay hungry stay foolish</p>
+        </div>
+        <div id="maps">
+            <h3>梦想所要到达的地方</h3>
+        </div>
+    </section>
+
+    <!-- Photography -->
+    
+    <section id="photography" class="content">
+        <div class="container">
+            <h2>趁年轻</h2>
+            <p>带上爱人去走遍所有美丽的地方，留下曾经存在过的证明。</p>
+            <!-- <a href="javascript:;" data-action="reload-montage"><i class="icon-shuffle"></i> <span>换一换</span></a> -->
+        </div>
+        <div id="montage" class="row uniform 25%"></div>
+    </section>
+
+    <!-- Design -->
+    
+    <section id="design" class="content">
+        <div class="container">
+            <h2>简约主义者</h2>
+            <p>我喜欢简约的设计、简约的生活，极简style。</p>
+            <!-- <p>我很喜欢把我的创造性发挥到极限，更享受从无到有、渐渐完美的设计过程。我爱设计，也相信它会让生活更美好。</p> -->
+            
+            <div class="row uniform">
+                <figure class="6u">
+                    <img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="http://v6.res.dandyweng.com/images/blog-mockup.jpg" alt="我的博客主页" />
+                </figure>
+                <figure class="6u">
+                    <img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="http://v6.res.dandyweng.com/images/album-mockup-sideview.jpg" alt="我的影集" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programming -->
+    
+    <section id="programming" class="content">
+        <div class="container">
+            <h2>我爱编程</h2>
+            <p>编程充满挑战性，使我的逻辑思维得到提高。</p>
+            <p>代码在指尖敲响，伴随着键盘的敲击声，给无数深夜留下的bug，让熬夜变得习以为常。</p>
+
+            <div class="row uniform 75%">
+                <header class="12u">
+                    <h3>作品</h3>
+                </header>
+                <div class="7u column left">
+                    <div class="row uniform 75%">
+                        <a href="javascript:;" data-version="2014" target="_blank" class="12u" rel="alternate"><img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="img/01.png" alt="2014" /></a>
+                    </div>
+                    <div class="row uniform 75%">
+                        <a href="javascript:;" data-version="2013" target="_blank" class="12u" rel="alternate"><img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="img/02.png" alt="2013" /></a>
+                    </div>
+                </div>
+                <div class="5u column right">
+                    <div class="row uniform 75%">
+                        <a href="javascript:;" data-version="2012" target="_blank" class="12u" rel="alternate"><img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="img/03.png" alt="2012" /></a>
+                    </div>
+                    <div class="row uniform 75%">
+                        <a href="javascript:;" data-version="2011" target="_blank" class="12u" rel="alternate"><img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="img/04.png" alt="2011" /></a>
+                    </div>
+                    <div class="row uniform 75%">
+                        <a href="javascript:;" data-version="2010" target="_blank" class="12u" rel="alternate"><img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="img/01.png" alt="2010" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apple -->
+    
+    <!-- <section id="apple" class="content">
+        <div class="container">
+            <h2>一个Apple粉丝</h2>
+            <p>我是一个铁杆“果粉”，我喜爱的不仅仅是 Apple 的产品，更推崇其标志性的极简主义设计风格。我曾排队 14 小时购得中国第一台 iPad 2，之后又为了 iPhone 4s 排队 20 小时。目前我正在学习开发 iOS app，下面这个是我的最新作品。</p>
+            <a href="https://blog.dandyweng.com/2017/02/nine-months-of-work/?from=dw" target="_blank" rel="external">
+                <img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="https://dn-ssl-dw-blog.qbox.me/files/2017/02/vary-home-screen-in-hand-held-iphone-7.jpg" alt="Vary iOS App" />
+                <span>了解这个 app 的详情信息 &raquo;</span>
+            </a>
+        </div>
+    </section> -->
+
+    <!-- More -->
+    
+    <!-- <section id="more" class="content">
+        <div class="container">
+            <h2>我的故事</h2>
+            <p>从我 18 岁起，就有幸受邀到国内一些知名高校演讲，与同龄人分享我的故事、思考和体会。下面的视频是我在同济大学的演讲，这是我第一次登上讲台，很紧张，还有些青涩。不过，还算勉强把想表达的都说出来了，如果你想更深入地了解我，那不妨一看。</p>
+            
+            <div class="row uniform">
+                <div id="video" class="7u 12u(tablet)">
+                    <a href="javascript:;" data-action="play-video" data-youku-id="XNjUyOTM0ODI0" data-youtube-id="F4BWNANyNhs">
+                        <img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="http://v6.res.dandyweng.com/images/tju-speech.jpg" alt="我在同济大学的演讲" />
+                        <i class="icon-play"></i>
+                    </a>
+                </div>
+                <div class="5u 12u(tablet) description">
+                    <h3>为何不走寻常路</h3>
+                    <p>世界已经为我们准备了一切。大路和小路，都在我们脚下。我一直在探寻，没有犹豫，说走就走。作为一名 homeschooler，走过的、还要走的，注定都是不寻常的路。我要问问这个世界：不走寻常路，风景是否这边独好？</p>
+                    <span>2013 年 12 月，上海</span>
+                </div>
+                <div id="player" class="12u"></div>
+            </div>
+            <p class="extra-links"><a href="http://v.youku.com/v_show/id_XNjUyOTM0ODI0.html" target="_blank" rel="external nofollow">去优酷观看</a> <span>|</span> <a href="https://www.youtube.com/watch?v=F4BWNANyNhs" target="_blank" rel="external nofollow">在 YouTube 上观看</a></p>
+        </div>
+    </section> -->
+
+    <!-- Say Hello -->
+    
+    <!-- <section id="say-hello" class="content">
+        <div class="container">
+            <h2>打个招呼吧</h2>
+            <p>我很期待与同龄人的交流。你的留言会被发布在我博客的<a href="https://blog.dandyweng.com/messages/" target="_blank" rel="external">留言板</a>上，我会在有空时尽快回复你。</p>
+            
+            <form id="comment" action="#">
+                <div class="row uniform">    
+                    <div class="6u 12u(tablet)"><input type="text" name="author" placeholder="称呼"></div>
+                    <div class="12u"><textarea name="comment" rows="5" placeholder="留言"></textarea></div>
+                    <div class="6u 12u(tablet)"><input type="text" name="email" placeholder="邮箱"></div>
+                    <div class="6u 12u(tablet)"><input type="text" name="url" placeholder="个人主页或微博地址"></div>
+                    <div class="12u">
+                        <button id="submit" name="submit" type="submit"><i class="icon-send"></i></button>
+                    </div>
+                </div>
+                <input type="hidden" name="comment_post_ID" value="1008" id="comment_post_ID">
+                <input type="hidden" name="agent" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 dwAPI/6.0" id="comment_agent">
+                <input type="hidden" name="ip" value="27.17.91.77" id="comment_ip">
+            </form>
+        </div>
+    </section> -->
+    
+    <!-- Contact -->
+    
+    <section id="contact" class="content">
+        <div class="container">
+            <p>我的邮箱:</p>
+            <a href="javascript:;">dushao1993@163.com</a>
+            <!-- <p>请注意，我不会接受任何公司的全职工作邀请，也不会出席任何商业性活动。但我会视情况承接设计与编程相关的项目，若有需求可通过邮件与我联系。</p> -->
+            
+            <h3>你可以在这些社交网络上关注我</h3>
+            <a href="javascript:;">@Great</a>
+            
+            <div class="sns-icons row uniform 0%">
+                <div class="2u">
+                    <a href="https://weibo.com/u/2449303381/home?wvr=5&lf=reg" target="_blank" rel="external nofollow">weibo</a>
+                </div>
+                <div class="2u">
+                    <a href="https://github.com/greatdyp" target="_blank" rel="external nofollow">github</a>
+                </div>
+                <div class="2u">
+                    <a href="javascript:;" target="_blank" rel="external nofollow">csdn</a>
+                </div>
+                <div class="2u">
+                    <a href="javascript:;" target="_blank" rel="external nofollow">wechat</a>
+                </div>
+                <div class="2u">
+                    <a href="javascript:;" target="_blank" rel="external nofollow">ins</a>
+                </div>
+                <div class="2u">
+                    <a href="javascript:;" target="_blank" rel="external nofollow">dingding</a>
+                </div>
+            </div>
+            
+            <!-- <p>你也可以收藏<a href="https://blog.dandyweng.com/" target="_blank" rel="external">我的博客</a>关注我的新动态，在 <a href="https://www.camarts.cn/" target="_blank" rel="external">Camarts</a> 上浏览我的摄影作品。点击<a href="https://blog.dandyweng.com/2015/10/the-sixth-version-of-my-website/" target="_blank">这里</a>了解这个网站背后的设计和开发故事。</p> -->
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    
+    <footer>
+        <div class="container">
+            <!-- <img src="http://v6.res.dandyweng.com/images/placeholder.png" data-original="http://v6.res.dandyweng.com/images/qr.png" width="100" alt="本页二维码" title="用微信扫描可分享给好友或朋友圈" />
+            <div id="back-to-top" data-action="scroll-to-top">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 64 64">
+                    <path fill="#cf4a5c" d="M42.057,37.732c0,0,4.139-25.58-9.78-36.207c-0.307-0.233-0.573-0.322-0.802-0.329
+                    c-0.227,0.002-0.493,0.083-0.796,0.311c-13.676,10.31-8.95,35.992-8.95,35.992c-10.18,8-7.703,9.151-1.894,23.262
+                    c1.108,2.693,3.048,2.06,3.926,0.115c0.877-1.943,2.815-6.232,2.815-6.232l11.029,0.128c0,0,2.035,4.334,2.959,6.298
+                    c0.922,1.965,2.877,2.644,3.924-0.024C49.974,47.064,52.423,45.969,42.057,37.732z M31.726,23.155
+                    c-2.546-0.03-4.633-2.118-4.664-4.665c-0.029-2.547,2.012-4.587,4.559-4.558c2.546,0.029,4.634,2.117,4.663,4.664
+                    C36.314,21.143,34.272,23.184,31.726,23.155z"/>
+                </svg>
+            </div> -->
+            <p>
+                <!-- 已有 <span id="count" title="当前版本：641250">1,063,405</span> 人次访问<br> -->
+                <!-- <a href="http://www.miitbeian.gov.cn/" class="icp" target="_blank" rel="external nofollow"> ICP 备 14026031 号</a><br>
+                <a href="https://www.qiniu.com/" class="icp" target="_blank" rel="external nofollow">感谢七牛云存储赞助提供 CDN 服务</a><br> -->
+                Designed and developed by Great<br>
+                Copyright © 2010-2018 weimodel.com. All Rights Reserved.
+            </p>
+            <!-- <p style="text-indent: -9999px;"><script src="//s9.cnzz.com/stat.php?id=3817169&amp;web_id=3817169"></script></p> -->
+        </div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.min.js"></script>
+    
 </body>
-</html>
+</html> 

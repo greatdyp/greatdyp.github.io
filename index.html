@@ -139,7 +139,7 @@
         var is_weixin = (function () {
             return navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1
         })(); 
-        console.log(is_weixin)
+        alert(is_weixin)
         window.onload = function () {
             var winHeight = typeof window.innerHeight != 'undefined' ? window.innerHeight : document.documentElement.clientHeight; //兼容IOS，不需要的可以去掉
             var btn = document.getElementById('J_weixin');

@@ -1,0 +1,95 @@
+body,
+input,
+textarea,
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Source Sans Light', 'Apple LiSung Light', 'STHeiti Light', 'SimSun', sans-serif;
+    /* Windows 下的非衬线中文字体黑体以及微软雅黑在大字号下都非常难看，无奈选用宋体↑ */
+}
+
+html.ios>body,
+html.ios>input,
+html.ios>textarea,
+html.ios>h1,
+html.ios>h2,
+html.ios>h3,
+html.ios>h4 {
+    font-family: sans-serif;
+}
+
+body,
+input,
+textarea {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+html.ios>body,
+html.ios>input,
+html.ios>textarea {
+    line-height: 1.65;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.content h2 {
+    margin-bottom: 0.25em;
+}
+
+.content>.container p {
+    letter-spacing: -0.5px;
+}
+
+body>header .title p.subline {
+    font-size: 1.5em;
+    margin-top: 0.125em;
+}
+
+section#travel #maps h3 {
+    letter-spacing: -1px;
+    font-size: 1.2em;
+}
+
+section#photography a i {
+    vertical-align: text-top;
+}
+
+section#more .description p {
+    line-height: 1.45;
+}
+
+section#contact .sns-icons {
+    display: flex;
+    font-size: 2.5em;
+}
+
+section#contact .sns-icons div {
+    width: 33%;
+    text-align: center;
+}
+
+footer a.icp {
+    font-size: 0.75em;
+    color: #bbb;
+}
+
+@media (max-width: 727px) {
+    body,
+    input,
+    textarea {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 535px) {
+    body,
+    input,
+    textarea {
+        font-size: 14px;
+        line-height: 1.35;
+    }
+}
